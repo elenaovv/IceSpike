@@ -16,24 +16,24 @@ This is the first stage of the knowledge distillation process. The authors use t
 
 We ran it with the following configurations:
 
-    * 2.2.2+cu118
-    * Seed: 42
-    * Batch Size: 16
-    * Fine-tune Learning Rate: 5e-05
-    * Max Sample Number: 80462898
-    * Epochs: 1
-    * Label Number: 2
-    * Depths: 6
-    * Max Length: 256
-    * Dimension: 768
-    * Representation Weight: 1.0
-    * Tau: 10.0
-    * Common Threshold: 1.0
-    * Number of Steps: 16
-    * Teacher Model Path: mideind/IceBERT-ic3
-    * Ignored Layers: [0, 1]
-    * All Samples: 1970350
-    * Skip Probability: 40.836855381023675
+    2.2.2+cu118
+    Seed: 42
+    Batch Size: 16
+    Fine-tune Learning Rate: 5e-05
+    Max Sample Number: 80462898
+    Epochs: 1
+    Label Number: 2
+    Depths: 6
+    Max Length: 256
+    Dimension: 768
+    Representation Weight: 1.0
+    Tau: 10.0
+    Common Threshold: 1.0
+    Number of Steps: 16
+    Teacher Model Path: mideind/IceBERT-ic3
+    Ignored Layers: [0, 1]
+    All Samples: 1970350
+    Skip Probability: 40.836855381023675
 
 ### 1. new_distill_spikformer.py
 
@@ -79,9 +79,9 @@ If you have any issues or need more help, please refer to the original [SpikeBER
 
 Models and the IGC dataset used for training can be found on HuggingFace.
 
-- [Labeled **IGC** dataset (books, law, news, journals)](https://huggingface.co/datasets/elenaovv/igc-labeled)
-- [Pre-distillation model **IceBERT-ic3-pre-distill**](https://huggingface.co/elenaovv/IceBERT-ic3-pre-distill)
-- [**IceSpike** model](https://huggingface.co/elenaovv/IceSpike)
+- Labeled [**IGC**](https://huggingface.co/datasets/elenaovv/igc-labeled) dataset (books, law, news, journals)
+- Pre-distillation [**IceBERT-ic3-pre-distill**](https://huggingface.co/elenaovv/IceBERT-ic3-pre-distill) model
+- [**IceSpike**](https://huggingface.co/elenaovv/IceSpike) model
 - You also can find [here](https://huggingface.co/elenaovv) other models that were produced during training on <em>1/3</em> and <em>2/3</em> of the **IGC** dataset and on the machine translated [IMDb](https://github.com/cadia-lvl/sentiment-analysis/blob/main/Datasets/IMDB-Dataset-GoogleTranslate-processed-nefnir.csv) dataset.
 
 # Finetune IceBERT-ic3
