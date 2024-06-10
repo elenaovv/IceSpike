@@ -1,6 +1,6 @@
 # IceSpike Implementation
 
-This repository contains the implementation of IceSpike, based on the original SpikeBERT implementation.
+This repository contains the implementation of **IceSpike**, based on the original <em>SpikeBERT</em> implementation.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ git clone https://github.com/Lvchangze/SpikeBERT.git
 ## Main Files and Modifications
 ### 1. predistill_spikformer.py
 
-This is the first stage of the knowledge distillation process. In the original, the authors use the BERT model, while we use IceBERT with RoBERTa architecture. Therefore, all imports and uses related to this were changed. Minor changes were made in processing datasets, and some parameters were removed accordingly.
+This is the first stage of the knowledge distillation process. The authors use the BERT model in the original, while we use IceBERT with RoBERTa architecture. Therefore, all imports and uses related to this were changed. Minor changes were made in processing datasets, and some parameters were removed accordingly.
 
 We ran it with the following configurations:
 
@@ -37,7 +37,7 @@ We ran it with the following configurations:
 
 ### 1. new_distill_spikformer.py
 
-This is the second and final stage of the knowledge distillation. The same BERT-RoBERTa changes were made, along with minor changes in processing datasets.
+This is the second and final stage of the knowledge distillation. The same BERT-RoBERTa changes and minor changes in processing datasets were made.
 
 Run with the following configurations:
 
@@ -73,4 +73,16 @@ Run with the following configurations:
  2. Pay attention to loading and processing datasets (format, location, loading).
  3. Ensure that the configurations match your environment and dataset requirements.
 
-For any issues or further assistance, please refer to the original [SpikeBERT repository](https://github.com/Lvchangze/SpikeBERT) and feel free to contact me.
+If you have any issues or need more help, please refer to the original [SpikeBERT repository](https://github.com/Lvchangze/SpikeBERT) and contact me.
+
+# Models and Dataset
+
+Models and the IGC dataset used for training can be found on HuggingFace.
+
+- [Labeled **IGC** dataset (books, law, news, journals)](https://huggingface.co/datasets/elenaovv/igc-labeled)
+- [Pre-distillation model **IceBERT-ic3-pre-distill**](https://huggingface.co/elenaovv/IceBERT-ic3-pre-distill)
+- [**IceSpike** model](https://huggingface.co/elenaovv/IceSpike)
+- You also can find [here](https://huggingface.co/elenaovv) other models that were produced during training on <em>1/3</em> and <em>2/3</em> of the **IGC** dataset and on the machine translated [IMDb](https://github.com/cadia-lvl/sentiment-analysis/blob/main/Datasets/IMDB-Dataset-GoogleTranslate-processed-nefnir.csv) dataset.
+
+# Finetune IceBERT-ic3
+
