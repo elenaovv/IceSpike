@@ -41,31 +41,31 @@ This is the second and final stage of the knowledge distillation. The same BERT-
 
 Run with the following configurations:
 
-    * 2.2.2+cu118
-    * Use GPU: True
-    * GPU Count: 2
-    * GPU Type: NVIDIA A100-PCIE-40GB
-    * Seed: 42
-    * Dataset Name: igc_full
-    * Batch Size: 32
-    * Fine-tune Learning Rate: 0.0005
-    * Epochs: 30
-    * Teacher Model Path: /users/home/elenao23/Models_2/results/elenaovv/model_igc_full/checkpoint-45468
-    * Label Number: 4
-    * Depths: 12
-    * Max Length: 128
-    * Dimension: 768
-    * Cross-Entropy Weight: 0.1
-    * Embedding Weight: 0.1
-    * Logit Weight: 1.0
-    * Representation Weight: 0.1
-    * Number of Steps: 4
-    * Tau: 2.0
-    * Common Threshold: 1.0
-    * Predistill Model Path: /users/home/elenao23/SpikeBert3/SpikeBERT/saved_models/predistill_spikformer_common_crawl/_lr5e-05_seed42_batch_size16_depths6_max_length256_tau10.0_common_thr1.0
-    * Ignored Layers: 0
-    * Metric: mcc
-    * Load Predistill Model: True
+    2.2.2+cu118
+    Use GPU: True
+    GPU Count: 2
+    GPU Type: NVIDIA A100-PCIE-40GB
+    Seed: 42
+    Dataset Name: igc_full
+    Batch Size: 32
+    Fine-tune Learning Rate: 0.0005
+    Epochs: 30
+    Teacher Model Path: /users/home/elenao23/Models_2/results/elenaovv/model_igc_full/checkpoint-45468
+    Label Number: 4
+    Depths: 12
+    Max Length: 128
+    Dimension: 768
+    Cross-Entropy Weight: 0.1
+    Embedding Weight: 0.1
+    Logit Weight: 1.0
+    Representation Weight: 0.1
+    Number of Steps: 4
+    Tau: 2.0
+    Common Threshold: 1.0
+    Predistill Model Path: /users/home/elenao23/SpikeBert3/SpikeBERT/saved_models/predistill_spikformer_common_crawl/_lr5e-05_seed42_batch_size16_depths6_max_length256_tau10.0_common_thr1.0
+    Ignored Layers: 0
+    Metric: mcc
+    Load Predistill Model: True
 
 ## Important Notes
 
